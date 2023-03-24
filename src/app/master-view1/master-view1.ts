@@ -31,6 +31,10 @@ export default class MasterView1 extends LitElement {
     .button {
       height: max-content;
     }
+    .text {
+      height: max-content;
+      min-width: min-content;
+    }
   `;
 
   render() {
@@ -73,6 +77,9 @@ export default class MasterView1 extends LitElement {
           </igc-icon-button>
         </igc-card-actions>
       </igc-card>
+      <p class="typography__body-1 text">
+        Body 1
+      </p>
     `;
   }
 }
