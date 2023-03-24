@@ -20,6 +20,10 @@ export default class MasterView extends LitElement {
       flex-grow: 1;
       flex-basis: 0;
     }
+    .text {
+      height: max-content;
+      min-width: min-content;
+    }
   `;
 
   render() {
@@ -28,6 +32,9 @@ export default class MasterView extends LitElement {
       <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
       <link rel='stylesheet' href='../../ig-theme.css'>
       <igc-calendar ?hide-header="${false}" header-orientation="horizontal" class="calendar"></igc-calendar>
+      <p class="typography__body-1 text">
+        Body 1
+      </p>
     `;
   }
 }
